@@ -1,0 +1,187 @@
+<header class="header_area" style="position: initial;z-index:99999 ">
+  <div class="header-top" style="background-color:#0e3091;display:block;">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 col-sm-8 header-top-left">
+          <center>
+            <a
+              href="#"
+              style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff"
+              >&nbsp;&nbsp;<span class="lnr lnr-envelope"></span
+              >service@brightedu.cn.com
+              <span class="lnr lnr-phone"></span>022-2855-7478</a
+            >
+          </center>
+        </div>
+
+        <div class="col-lg-5 col-sm-4  header-top-right">
+          <center>
+            <% if (loggedIn) { %>
+            <a
+              href=""
+              style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff"
+              ><h3 style="color: white;"><%=user.name %></h3></a
+            >
+            |
+            <a
+              href="/users/logout"
+              style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff"
+              >SIGNOUT</a
+            >
+
+            <% }else { %>
+            <a
+              href="/users/login"
+              style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff"
+              >SIGNIN</a
+            >
+            |
+            <a
+              href="/users/signup"
+              style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff"
+              >SIGNUP</a
+            >
+            <% }%>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main_menu" style="z-index:99999 ">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand logo_h" href="index.html">
+          <img src="/assets/images/logo.jpg" style="width:300px;height:100px"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div
+          class="collapse navbar-collapse offset"
+          id="navbarSupportedContent"
+        >
+          <ul class="nav navbar-nav menu_nav ml-auto">
+            <li class="nav-item active" style="">
+              <a
+                class="nav-link"
+                href="/"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700;color:#ea247d;font-size: 12px;"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/users/scholarships"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700;color:black;font-size: 12px;"
+                >Scholarships</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/coursesnew"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700;color:black;font-size: 12px;"
+                >Courses</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700color:black;font-size: 12px;"
+                >Universities</a
+              >
+            </li>
+
+            <li class="nav-item submenu dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700;color:black;font-size: 12px;"
+                >Cooperation</a
+              >
+              <ul class="dropdown-menu" style="background-color:#ea247d">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/agent"
+                    style="background-color:#ea247d;color:white"
+                    >Agent</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/university"
+                    style="background-color:#ea247d;color:white"
+                    >University</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item submenu dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700;color:black;font-size: 12px;"
+                >About us</a
+              >
+              <ul class="dropdown-menu" style="background-color:#ea247d">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/about-us"
+                    style="background-color:#ea247d;color:white"
+                    >About us</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="/pick-up-service"
+                    style="background-color:#ea247d;color:white"
+                    >Pick up service</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/contactus"
+                style="font-family: 'Poppins', sans-serif !important;text-transform: uppercase;font-weight: 700;color:black;font-size: 12px;"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

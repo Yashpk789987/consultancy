@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/bootstrap.css" />
+    <title>Add Course</title>
+  </head>
+  <body>
+    <%- include('../header' , { admin : admin , active : "university_manage" })
+    %>
+    <div class="container">
+      <div class="col-md-12">
+        <div class="card mt-4">
+          <div class="card-header">
+            <b>Update University </b>
+          </div>
+          <form action="/university/update" method="post">
+            <div class="card-body register">
+              <p class="card-text">
+                <b>Please Fill University Details here</b>
+              </p>
+
+              <div class="form-group">
+                <label for="formGroupExampleInput">University Name</label>
+                <input
+                  type="text"
+                  name="_id"
+                  hidden
+                  value="<%=university._id%>"
+                />
+                <input
+                  type="text"
+                  required
+                  class="form-control"
+                  name="name"
+                  value="<%=university.name%>"
+                  placeholder="University Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="UPDATE"
+                  style="width : 100%"
+                  class="btn btn-primary"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/bootstrap.js"></script>
+  <script src="/assets/popper.js"></script>
+</html>

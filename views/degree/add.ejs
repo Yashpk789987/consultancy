@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/bootstrap.css" />
+    <title>Add Degree</title>
+  </head>
+  <body>
+    <%- include('../header' , { admin : admin , active : "degree_add" }) %>
+    <div class="container">
+      <div class="col-md-12">
+        <div class="card mt-4">
+          <div class="card-header">
+            <b>Add University </b>
+          </div>
+          <form action="/degree/add" method="post">
+            <div class="card-body register">
+              <p class="card-text">
+                <b>Please Fill Degree Details here</b>
+              </p>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Select University</label>
+                <select
+                  required
+                  id="universities"
+                  name="university_id"
+                  class="custom-select custom-select-lg mb-3"
+                >
+                  <option selected disabled>Loading Universities... </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="formGroupExampleInput">Title</label>
+                <input
+                  type="text"
+                  required
+                  class="form-control"
+                  name="title"
+                  placeholder="Title"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  style="width : 100%"
+                  class="btn btn-primary"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/bootstrap.js"></script>
+  <script src="/assets/popper.js"></script>
+  <script src="/myjs/degree.js"></script>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <!-- Required meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" href="img/favicon.png" type="image/png">
+      <title>Courses</title>
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="/css/bootstrap.css">
+      <link rel="stylesheet" href="/vendors/linericon/style.css">
+      <link rel="stylesheet" href="/css/font-awesome.min.css">
+      <link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+      <link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
+      <link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+      <link rel="stylesheet" href="/vendors/animate-css/animate.css">
+      <!-- main css -->
+      <link rel="stylesheet" href="/css/style.css">
+      <style>
+         #customers {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+         }
+         #customers td, #customers th {
+         border: 1px solid #ddd;
+         padding: 8px;
+         font-size:13px;
+         }
+         #customers tr:nth-child(even){background-color: #f2f2f2;}
+         #customers tr:hover {background-color: #ddd;}
+         #customers th {
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: left;
+         background-color: #0e3091;
+         color: white;
+         }
+         #customers td {
+         color: black;
+         }
+      </style>
+      <style>
+         .navbar-toggler span
+         {
+         background:#ea247d;
+         }
+      </style>
+   </head>
+   <body>
+      <!--================ Start Header Menu Area =================-->
+      <%- include('../users/header' , { loggedIn : loggedIn }) %>
+      <!--================ End Header Menu Area =================-->
+      <!--================Home Banner Area =================-->
+      <section class="banner_area" style="min-height: 150px;">
+         <div class="banner_inner d-flex align-items-center" style="min-height: 150px;">
+            <div class="overlay"></div>
+            <div class="container">
+               <div class="row justify-content-center">
+                  <div class="col-lg-6">
+                     <div class="banner_content text-center">
+                        <h2 style="font-family: 'Poppins', sans-serif !important;font-size: 38px;">Courses</h2>
+                        <a href="index.html" style="font-family: 'Poppins', sans-serif !important;font-size: 15px;color:white">Home | </a>
+                        <a href="about-us.html" style="font-family: 'Poppins', sans-serif !important;font-size: 15px;color:white">Courses </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--================End Home Banner Area =================-->
+      <section class="sample-text-area" >
+         <div class="container">
+            <center>
+               <h3 style="margin-top:-7%"><strong> Browse & Apply for Courses </strong></h3>
+            </center>
+            <br>
+            <form class="row contact_form" action="/users/search_scholarships" method="POST" >
+               <!-- <div class="col-md-3" >
+                  <div class="input-group-icon" style="border:2px solid #ced4da;border-radius:5px">
+                     <div class="form-select" id="default-select">
+                        <select>
+                           <option value="1">Select City</option>
+                        </select>
+                     </div>
+                  </div>
+                  </div> -->
+               <br><br>
+               <!-- <div class="col-md-3" >
+                  <div class="input-group-icon" style="border:2px solid #ced4da;border-radius:5px">
+                     <div class="form-select" id="default-select">
+                        <select id = 'scholarships_ajax' >
+                           <option  value="1">Loading...</option>
+                        </select>
+                     </div>
+                  </div>
+                  </div> -->
+               <br><br>
+               <div class="col-md-3" >
+                  <select name = 'degree__filter'>
+                     <option  disabled selected>Select Degree</option>
+                     <%  degrees.forEach(function(item,index){ %>
+                       <option value="<%=item.degree%>"><%=item.degree%></option>
+                     <% }) %>
+                  </select>
+               </div>
+               <br><br>
+               <div class="col-md-3" >
+                  <select name = 'language__filter'>
+                     <option  disabled selected>Select Language</option>
+                     <% languages.forEach(function(item,index){ %>
+                       <option value="<%=item.language%>"><%=item.language%></option>
+                     <% }) %>
+                  </select>
+               </div>
+               <br><br>
+               <div class="col-md-3" >
+                  <select name = 'intake__filter'>
+                     <option  disabled selected>Select Intake</option>
+                     <% intakes.forEach(function(item,index){ %>
+                       <option value="<%=item.intake%>"><%=item.intake%></option>
+                     <% }) %>
+                  </select>
+               </div>
+               <br><br>
+               <div class="col-md-3" >
+                  <select name = 'program_id__filter'>
+                     <option  disabled selected>Select Program ID</option>
+                     <% programs.forEach(function(item,index){ %>
+                       <option value="<%=item.program_id%>"><%=item.program_id%></option>
+                     <% }) %>
+                  </select>
+               </div>
+               <br><br>
+               <div class="col-md-3">
+                  <!-- <a href="#" >Search</a> -->
+                  <input type="submit" class="genric-btn default" style="background:#ea247d;color:white;font-size:12px" value="Search">
+               </div>
+               <div class="col-md-9">
+                  <h3 style="color:green"><%=message%></h3>
+               </div>
+               
+            </form>
+            <br>
+            <div class="table-responsive" >
+               <table id="customers">
+                  <tr>
+                     <th>Banner</th>
+                     <th>Major</th>
+                     <th>Program ID</th>
+                     <th>Degree</th>
+                     <th>Language</th>
+                     <th>Intake</th>
+                     <th>You Need Pay(RMB)</th>
+                     <th>Apply</th>
+                  </tr>
+                  <% if (scholarships.length == 0) { %>
+                   <h3>No Courses Found ..</h3>
+                  <% } %>
+                  <% scholarships.forEach(function(item,index){ %>
+                  <tr>
+                     <td>Banner</td>
+                     <td><%=item.major%></td>
+                     <td><%=item.program_id%></td>
+                     <td><%=item.degree%></td>
+                     <td><%=item.language%></td>
+                     <td><%=item.intake%></td>
+                     <td><%=item.application_fee%></td>
+                     <td><a href="/applications/apply/<%=item._id%>" class="genric-btn default" style="background:#ea247d;color:white;font-size:12px">Apply</a></td>
+                  </tr>
+                  <% }) %>
+               </table>
+            </div>
+         </div>
+      </section>
+      <!--================ End Testimonial Area =================-->
+      <!--================ Start footer Area  =================-->
+      <footer class="footer-area section_gap" style="background-color:#0e3091;">
+         <div class="container" style="margin-top:-50px;margin-bottom:-100px">
+            <div class="row">
+               <div class="col-lg-3 col-md-6 single-footer-widget">
+                  <h4>SCHOLARSHIPS</h4>
+                  <ul>
+                     <li><a href="#" style="color:white">Non Degree</a></li>
+                     <li><a href="#" style="color:white">Diploma</a></li>
+                     <li><a href="#" style="color:white">Bachelor</a></li>
+                     <li><a href="#" style="color:white">Master</a></li>
+                     <li><a href="#" style="color:white">PHD</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-6 single-footer-widget">
+                  <h4>Courses</h4>
+                  <ul>
+                     <li><a href="#" style="color:white">Non Degree</a></li>
+                     <li><a href="#" style="color:white">Diploma</a></li>
+                     <li><a href="#" style="color:white">Bachelor</a></li>
+                     <li><a href="#" style="color:white">Master</a></li>
+                     <li><a href="#" style="color:white">PHD</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-6 single-footer-widget">
+                  <h4>UNIVERSITIES</h4>
+                  <ul>
+                     <li><a href="#" style="color:white">China University</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-3 col-md-6 single-footer-widget">
+                  <h4>CONTACT INFO</h4>
+                  <ul>
+                     <li><a href="#" style="color:white">Address:  Building 86, Room 613. 6th Floor, Li Shuang Road, South of Kunlan Park, New Home, Jinnan Distrcit, Tianjin City P.R. China.</a></li>
+                     <li><a href="#" style="color:white">Phone: 022-2855-7478</a></li>
+                     <li><a href="#" style="color:white">Email: service@brightedu.cn.com</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <div class="header-top" style="background-color:#ea247d;display:block;padding:8px;">
+         <div class="container">
+            <div class="row align-items-center">
+               <div class="col-lg-12">
+                  <center><font style="font-family: 'Poppins', sans-serif !important;font-size: 12px;color:#fff">Copyright © 2018 All rights reserved <br> Designed by <a href="#">Techieshubhdeep IT Solution Pvt Ltd</font>
+                  </center>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--================ End footer Area  =================-->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="/js/jquery-3.2.1.min.js"></script>
+      <script src="/js/popper.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+      <script src="/js/stellar.js"></script>
+      <script src="/js/countdown.js"></script>
+      <script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+      <script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+      <script src="/js/owl-carousel-thumb.min.js"></script>
+      <script src="/js/jquery.ajaxchimp.min.js"></script>
+      <script src="/vendors/counter-up/jquery.counterup.js"></script>
+      <script src="/js/mail-script.js"></script>
+      <!--gmaps Js-->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+      <script src="/js/gmaps.min.js"></script>
+      <script src="/js/theme.js"></script>
+      <script src="/myjs/scholarship_user.js"></script>
+   </body>
+</html>

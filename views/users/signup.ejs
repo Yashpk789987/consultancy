@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/bootstrap.css" />
+    <title>User SignUp</title>
+  </head>
+  <body background="/assets/images/login_bg.jpg">
+    <div
+      class="container"
+      style="padding-top:1% ; padding-left: 20%; padding-right: 20%;"
+    >
+      <center><h1 style="color: white;">User SignUp</h1></center>
+      <form action="/users/create" method="POST">
+        <div class="form-group">
+          <label style="color : white" for="exampleInputEmail1"
+            >Your Name
+          </label>
+          <input
+            required
+            type="text"
+            name="name"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="Enter Your Name"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label style="color : white" for="exampleInputEmail1"
+            >Email Address
+          </label>
+          <input
+            required
+            type="email"
+            name="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="Enter Your Email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label style="color : white" for="exampleInputEmail1"
+            >Contact Number
+          </label>
+          <input
+            required
+            type="number"
+            name="mobile"
+            class="form-control"
+            id="exampleInputEmail1"
+            placeholder="Enter Your Contact Number"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label style="color : white" for="exampleInputPassword1"
+            >Password</label
+          >
+          <input
+            required
+            placeholder="Enter Your Password"
+            name="password"
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="form-group">
+          <label style="color : white" for="exampleInputPassword1"
+            >Address</label
+          >
+          <textarea
+            class="form-control"
+            name="address"
+            placeholder="Your Address"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </div>
+        <div style="color : white">
+          <h5><%=message%></h5>
+        </div>
+
+        <button style="width : 100%" type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+      <h3 style="padding-top:5% ; ">
+        <a style="color: white;" href="/users/login"
+          >Already Have An Account ? Login
+        </a>
+      </h3>
+    </div>
+  </body>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/bootstrap.js"></script>
+  <script src="/assets/popper.js"></script>
+</html>

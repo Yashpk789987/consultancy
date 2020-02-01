@@ -1,0 +1,199 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand"><%=admin.name%></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown" id="university">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Universities
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="university_add" href="/university/add"
+            >Add University</a
+          >
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="university_manage" href="/university/all"
+            >Manage Universities</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" id="degree">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Degrees
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="degree_add" href="/degree/add"
+            >Add Degree</a
+          >
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="degree_manage" href="/degree/all"
+            >Manage Degree</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" id="scholarship">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Scholarships
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="scholarship_add" href="/scholarship/add"
+            >Add Scholarship</a
+          >
+          <div class="dropdown-divider"></div>
+          <a
+            class="dropdown-item"
+            id="scholarship_manage"
+            href="/scholarship/all"
+            >Manage Scholarships</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" id="application">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Applications
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a
+            class="dropdown-item"
+            id="application_manage"
+            href="/applications/all"
+            >Manage Applications</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" id="user">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Registered Users
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="user_manage" href="/users/all"
+            >Manage Users</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" id="city">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Cities
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="city_add" href="/city/add">Add City</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="city_manage" href="/city/all"
+            >Manage Cities</a
+          >
+        </div>
+      </li>
+      <li class="nav-item dropdown" id="language">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Languages
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" id="language_add" href="/language/add"
+            >Add Language</a
+          >
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" id="language_manage" href="/language/all"
+            >Manage Languages</a
+          >
+        </div>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</nav>
+<div style="padding-top : 5%"></div>
+<script src="/assets/jquery.js"></script>
+<script>
+  $('.navbar li').on('click', function() {
+    $('.navbar li').removeClass('active');
+    $(this).addClass('active');
+  });
+  $('.dropdown-item').on('click', function(req, res) {
+    $('.dropdown-item').removeClass('active');
+    $(this).addClass('active');
+  });
+  let subheader = '<%=active%>';
+  let header = subheader.split('_')[0];
+  header = '#' + header + '';
+  subheader = '#' + subheader + '';
+  $(header).addClass('active');
+  $(subheader).addClass('active');
+</script>

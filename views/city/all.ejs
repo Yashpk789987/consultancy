@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/bootstrap.css" />
+    <title>Admin Login</title>
+  </head>
+  <body>
+    <%- include('../header' , { admin : admin , active : "city_manage" }) %>
+    <div class="container" style="padding-top: 2%;">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">S.No.</th>
+            <th scope="col">City</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% cities.forEach((item,index) => { %>
+          <tr>
+            <th scope="row"><%= index+1 %></th>
+            <td><%=item.name%></td>
+            <td>
+              <a href="/city/update/<%=item._id%>" class="btn btn-warning"
+                >Edit</a
+              >
+            </td>
+            <td>
+              <a class="delete btn btn-danger" _id="<%=item._id%>">Delete</a>
+            </td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/bootstrap.js"></script>
+  <script src="/assets/popper.js"></script>
+  <script>
+    $('.delete').click(e => {
+      let _id = e.target.attributes._id.value;
+      let response = confirm('Are You Sure To Delete ???');
+      if (response) {
+        window.location.href = `/city/delete/${_id}`;
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/bootstrap.css" />
+    <title>View Application</title>
+  </head>
+  <body>
+    <%- include('../header' , { admin : admin , active : "application_manage" })
+    %>
+    <div class="container" style="padding-top: 2%;">
+      <table class="table table-striped table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Status</th>
+            <td scope="row"><%=application.status%></td>
+          </tr>
+          <tr>
+            <th scope="col">Degree</th>
+            <td scope="row"><%=application.degree%></td>
+          </tr>
+
+          <tr>
+            <th scope="col">Date And Time</th>
+            <td scope="row"><%=application.date%> and <%=application.time%></td>
+          </tr>
+          <tr>
+            <th scope="col">User name</th>
+            <td scope="row"><%=application.name%></td>
+          </tr>
+          <tr>
+            <th scope="col">Contact Details</th>
+            <td scope="row">
+              Email : <%=application.email%> &nbsp;&nbsp;&nbsp;&nbsp;Mobile :
+              <%=application.mobile%>
+            </td>
+          </tr>
+          <tr>
+            <th scope="col">Degree</th>
+            <td scope="row"><%=application.degree%></td>
+          </tr>
+          <tr>
+            <th scope="col">Language</th>
+            <td scope="row"><%=application.language%></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+  </body>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/bootstrap.js"></script>
+  <script src="/assets/popper.js"></script>
+</html>

@@ -1,0 +1,1612 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>University</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/vendors/linericon/style.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="/vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="/vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="/vendors/animate-css/animate.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<style>
+	
+	
+	.navbar-toggler span
+	{
+	background:#ea247d;
+	}
+	
+	
+	
+	</style>
+	
+</head>
+
+<body>
+
+	<!--================ Start Header Menu Area =================-->
+	<%- include('header_index') %>
+	<!--================ End Header Menu Area =================-->
+	
+	
+	 <script src="slider/js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:500,d:1000,x:0,e:{x:6}}],
+              [{b:-1,d:1,x:100,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,x:200,p:{x:{d:1,dO:9}}},{b:0,d:2000,x:0,e:{x:6},p:{x:{dl:0.1}}}],
+              [{b:-1,d:1,rX:20,rY:90},{b:0,d:4000,rX:0,e:{rX:1}}],
+              [{b:-1,d:1,rY:-20},{b:0,d:4000,rY:-90,e:{rY:7}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:3000,sX:1,sY:1,e:{sX:1,sY:1}}],
+              [{b:-1,d:1,sX:2,sY:2},{b:1000,d:5000,sX:1,sY:1,e:{sX:3,sY:3}}],
+              [{b:-1,d:1,tZ:300},{b:0,d:2000,o:1},{b:3500,d:3500,tZ:0,e:{tZ:1}}],
+              [{b:-1,d:1,x:20,p:{x:{o:33,r:0.5}}},{b:0,d:1000,x:0,o:0.5,e:{x:3,o:1},p:{x:{dl:0.05,o:33},o:{dl:0.02,o:68,rd:2}}},{b:1000,d:1000,o:1,e:{o:1},p:{o:{dl:0.05,o:68,rd:2}}}],
+              [{b:-1,d:1,da:[0,700]},{b:0,d:600,da:[700,700],e:{da:1}}],
+              [{b:600,d:1000,o:0.4}],
+              [{b:-1,d:1,da:[0,400]},{b:200,d:600,da:[400,400],e:{da:1}}],
+              [{b:800,d:1000,o:0.4}],
+              [{b:-1,d:1,sX:1.1,sY:1.1},{b:0,d:1600,o:1},{b:1600,d:5000,sX:0.9,sY:0.9,e:{sX:1,sY:1}}],
+              [{b:0,d:1000,o:1,p:{o:{o:4}}}],
+              [{b:1000,d:1000,o:1,p:{o:{o:4}}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1350;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin-ext,cyrillic-ext,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic" rel="stylesheet" type="text/css" />
+    <style>
+        /*jssor slider loading skin double-tail-spin css*/
+        .jssorl-004-double-tail-spin img {
+            animation-name: jssorl-004-double-tail-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-004-double-tail-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 031 css*/
+        .jssorb031 {position:absolute;}
+        .jssorb031 .i {position:absolute;cursor:pointer;}
+        .jssorb031 .i .b {fill:#000;fill-opacity:0.6;stroke:#fff;stroke-width:1400;stroke-miterlimit:10;stroke-opacity:0.8;}
+        .jssorb031 .i:hover .b {fill:#fff;fill-opacity:1;stroke:#000;stroke-opacity:1;}
+        .jssorb031 .iav .b {fill:#fff;stroke:#000;stroke-width:1600;fill-opacity:.6;}
+        .jssorb031 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+       
+	   <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+	   
+	<!--<br><br><br><br><br><br>
+	 <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;" >
+	-->
+	
+	
+        <!-- Loading Screen -->
+        <!--<div data-u="loading" class="jssorl-004-double-tail-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="slider/img/double-tail-spin.svg" />
+        </div>-->
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div style="background-color:#000000;">
+                <img data-u="image" style="opacity:0.5;" src="slider/img/q1.jpg" />
+                <div data-ts="flat" data-p="320" style="left:144px;top:80px;width:550px;height:90px;position:absolute;overflow:hidden;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="0" style="left:550px;top:0px;width:550px;height:90px;position:absolute;overflow:hidden;">
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-arr="1" style="left:20px;top:18px;width:200px;height:20px;position:absolute;color:#edf1f2;font-size:16px;font-weight:700;line-height:1.2;letter-spacing:0.1em;">Welcome</div>
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-arr="2" style="left:19px;top:36px;width:600px;height:30px;position:absolute;color:#edf1f2;font-size:24px;line-height:1.2;letter-spacing:0.05em;"><span style="font-weight:900;color:#e04338;">to</span> Bright Future Consultancy</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="slider/img/q5.jpg" />
+                <div data-ts="flat" data-p="2720" data-po="50% 48%" style="left:0px;top:0px;width:980px;height:380px;position:absolute;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="3" style="left:400px;top:-30px;width:500px;height:400px;position:absolute;">
+                        <div data-to="50% 50%" data-ts="preserve-3d" data-t="4" style="left:0px;top:0px;width:500px;height:400px;position:absolute;">
+                            <div data-to="50% 50%" data-ts="preserve-3d" data-t="5" style="left:0px;top:0px;width:500px;height:400px;position:absolute;">
+                                <div data-to="50% 50%" data-ts="preserve-3d" data-t="6" style="left:0px;top:0px;width:500px;height:400px;position:absolute;">
+                                    <div data-to="50% 50%" data-t="7" style="left:-50px;top:175px;width:600px;height:38px;position:absolute;opacity:0;color:#00a186;font-size:32px;font-weight:700;line-height:1.2;text-align:center;">Welcome to Bright Future Consultancy </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="slider/img/q4.jpeg" />
+                <div data-ts="flat" data-p="2720" data-po="50% 48%" style="left:0px;top:0px;width:980px;height:380px;position:absolute;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-arr="8" style="left:-2px;top:20px;width:1000px;height:20px;position:absolute;opacity:0;color:#0ff2f2;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.2;letter-spacing:1.3em;text-align:center;">Welcome to Bright Future Consultancy</div>
+                </div>
+            </div>
+            <div style="background-color:#000000;">
+                <img data-u="image" style="opacity:0.5;" src="slider/img/q2.jpg" />
+                <div data-ts="flat" data-p="1800" data-po="50% -100%" style="left:120px;top:90px;width:600px;height:300px;position:absolute;">
+                    <svg viewbox="0 0 200 200" width="200" height="200" data-t="10" style="left:66px;top:21px;display:block;position:absolute;opacity:0.6;overflow:visible;">
+                        <path stroke-dasharray="0,700" fill="none" stroke="#ffffff" d="M0,100C0,44.77152 44.77152,0 100,0C155.22848,0 200,44.77152 200,100C200,155.22848 155.22848,200 100,200C44.77152,200 0,155.22848 0,100Z" data-t="9"></path>
+                    </svg>
+                    <svg viewbox="0 0 80 80" width="80" height="80" data-t="12" style="left:3px;top:124px;display:block;position:absolute;opacity:0.6;overflow:visible;">
+                        <path stroke-dasharray="0,400" fill="none" stroke="#ffffff" shape-rendering="crispEdges" d="M80,80L0,80L0,0L80,0Z" data-t="11"></path>
+                    </svg>
+                    <svg viewbox="0 0 500 200" data-to="50% 50%" width="500" height="200" data-t="13" style="left:50px;top:50px;display:block;position:absolute;opacity:0;overflow:visible;">
+                        <g>
+                            <text fill="#ffffff" x="17" y="110" style="position:absolute;font-family:Montserrat,sans-serif;font-size:32px;font-weight:300;overflow:visible;">welcome
+                            </text>
+                            <text fill="#ffffff" x="188" y="110" style="position:absolute;font-family:Montserrat,sans-serif;font-size:32px;font-weight:500;letter-spacing:0.1em;overflow:visible;">to 
+                            </text>
+                            <text fill="#ff3700" x="218" y="130" style="position:absolute;font-family:Montserrat,sans-serif;font-size:16px;font-weight:900;letter-spacing:0.1em;overflow:visible;">Bright Future
+                            </text>
+                            <text fill="#ff3700" x="333" y="130" style="position:absolute;opacity:0.8;font-family:Montserrat,sans-serif;font-size:16px;font-weight:700;letter-spacing:0.1em;overflow:visible;">Consultancy
+                            </text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <img data-u="image" src="slider/img/q3.png" />
+                <div data-ts="flat" data-p="500" style="left:160px;top:-30px;width:800px;height:200px;position:absolute;">
+                    <div data-arr="14" style="left:0px;top:36px;width:800px;height:70px;position:absolute;opacity:0;color:#199494;font-family:'Roboto Condensed',sans-serif;font-size:32px;font-weight:400;line-height:1.2;letter-spacing:-0.05em;text-align:center;text-shadow:2px 1px #d9d99a;">ADDING&nbsp;&nbsp;<span style="font-size:2em;">PERFECTION</span>&nbsp; TO&nbsp; YOUR&nbsp;&nbsp;<span style="font-size:1.6em;">LAWN</span></div>
+                    <div data-arr="15" style="left:0px;top:106px;width:800px;height:48px;position:absolute;opacity:0;color:#0d4d4d;font-family:'Roboto Condensed',sans-serif;font-size:20px;font-weight:400;line-height:1.2;letter-spacing:0.2em;text-align:center;text-shadow:1px 1px #d9d99a;">CREATING GREEN <span style="font-size:2em;">SPACES</span> FOR LIVING</div>
+                </div>
+            </div>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;"></a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:14px;height:14px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+	
+	
+	
+	
+	
+	
+	
+	
+
+	<!--================ Start Home Banner Area =================-->
+	
+	
+	
+	
+	
+	<!--<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h2>
+								We Rank the Best <br>
+								Courses on the Web
+							</h2>
+							<p>
+								In the history of modern astronomy, there is probably no one greater leap forward than the building and launch
+								of
+								the space telescope known as the Hubble.
+							</p>
+							<div class="search_course_wrap">
+								<form action="" class="form_box d-flex justify-content-between w-100">
+									<input type="text" placeholder="Search Courses" class="form-control" name="username" onfocus="this.placeholder = ''"
+									 onblur="this.placeholder = 'Search Courses'">
+									<button type="submit" class="btn search_course_btn">Search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start Feature Area =================-->
+	<!--<section class="feature_area">
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-lg-4">
+					<div class="single_feature d-flex flex-row pb-30">
+						<div class="icon">
+							<span class="lnr lnr-book"></span>
+						</div>
+						<div class="desc">
+							<h4>New Classes</h4>
+							<p>
+								In the history of modern astronomy, there is probably no one greater leap forward building and launch.
+							</p>
+						</div>
+					</div>
+					<div class="single_feature d-flex flex-row pb-30">
+						<div class="icon">
+							<span class="fa fa-trophy"></span>
+						</div>
+						<div class="desc">
+							<h4>Top Courses</h4>
+							<p>
+								In the history of modern astronomy, there is probably no one greater leap forward building and launch.
+							</p>
+						</div>
+					</div>
+					<div class="single_feature d-flex flex-row">
+						<div class="icon">
+							<span class="lnr lnr-screen"></span>
+						</div>
+						<div class="desc">
+							<h4>Full E-Books</h4>
+							<p>
+								In the history of modern astronomy, there is probably no one greater leap forward building and launch.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!--================ End Feature Area =================-->
+	<!--<div class="events_area" style="background-color:#ea247d">
+		<div class="container">
+		  
+		
+		</div>
+	</div>-->
+	
+	<!--================ Start Department Area =================-->
+	<div class="department_area section_gap">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-6">
+					<div class="dpmt_courses">
+						<div class="row">
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+								<div>
+									<div class="dpmt_icon">
+										<img src="images/a1.jpg" alt="" style="height:300px;width:300px">
+									</div>
+									<!--<h4>Languages</h4>-->
+								</div>
+							</div>
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon2.png" alt="">
+									</div>
+									<h4>Business</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon3.png" alt="">
+									</div>
+									<h4>Literature</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon4.png" alt="">
+									</div>
+									<h4>Software</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon5.png" alt="">
+									</div>
+									<h4>Design</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon6.png" alt="">
+									</div>
+									<h4>Coaching</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="offset-lg-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon7.png" alt="">
+									</div>
+									<h4>Development</h4>
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+
+				<div class="offset-lg-1 col-lg-5">
+					<div class="dpmt_right">
+						<h1>About Us</h1>
+						<p>RIGHT FUTURE EDUCATION CONSULTANCY (BrightEDU) was established in the year 2014. We consult for high education planning and materialize or go for implementation according to the university's requirement. Our company offer range of consulting services to help analyze university's requirements for effective and flexibility of oversea student’s recruitment.</p>
+						
+                        <p>BRIGHT FUTURE EDUCATION CONSULTANCY helps to get Admission to Chinese Universities with different kind of scholarships, Waiver on Tuition fees and accommodation fees or part.....</p>
+						<a href="#" class="primary-btn text-uppercase" style="background:#ea247d">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Department Area =================-->
+
+	<!--================ Start Popular Courses Area =================-->
+	<!--<div class="popular_courses lite_bg">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>Popular Courses</h2>
+						<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
+							exciting to think about setting up your own viewing station.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single course --
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#"><i class="lnr lnr-user"></i>355</a>
+									</span>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a>
+									</span>
+								</div>
+								<div>
+									<span class="price">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course --
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price df_color1">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course --
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course --
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price df_color2">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--================ End Popular Courses Area =================-->
+
+	<!--================ Start Fact Area =================-->
+	<!--<div class="fact_area overlay">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>Facts that Make us Unique</h2>
+						<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
+							exciting to think about setting up your own viewing station.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single features --
+				<div class="col-lg-4 col-md-6">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="img/f-icons/icon1.png" alt="">
+						</div>
+						<h4>Expert Mentors</h4>
+						<p>Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore dolor sit
+							amet consec tetur adipisicing elit, sed do eiusmod tempor sed do eiusmod tempor incididunt labore dolor sit amet
+							consec tetur adipisicing elit, seddo eiusmod tempor.</p>
+					</div>
+				</div>
+				<!-- single features --
+				<div class="col-lg-4 col-md-6">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="img/f-icons/icon2.png" alt="">
+						</div>
+						<h4>25000+ Courses</h4>
+						<p>Lorem ipsum dolor sit amet consec tetur adipis icing elit, sed do eiusmod tempor incididunt labore dolor sit
+							amet consec.</p>
+					</div>
+				</div>
+				<!-- single features --
+				<div class="col-lg-4 col-md-6">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="img/f-icons/icon3.png" alt="">
+						</div>
+						<h4>Student Membership</h4>
+						<p>Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore dolor sit
+							amet consec tetur adipisicing elit, sed do eiusmod tempor sed do eiusmod tempor incididunt labore dolor sit amet
+							consec tetur adipisicing elit, seddo eiusmod tempor.</p>
+					</div>
+				</div>
+				<!-- single features --
+				<div class="col-lg-4 col-md-6">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="img/f-icons/icon4.png" alt="">
+						</div>
+						<h4>Lifetime Access</h4>
+						<p>Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore dolor sit
+							amet consec tetur adipisicing elit sed do eiusmod.</p>
+					</div>
+				</div>
+				<!-- single features --
+				<div class="col-lg-4 col-md-6">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="img/f-icons/icon5.png" alt="">
+						</div>
+						<h4>Source File Included</h4>
+						<p>Lorem ipsum dolor sit amet consec tetur adipisicing elit, sed do eiusmod tempor incididunt labore dolor sit
+							amet consec tetur adipisicing elit sed do eiusmod.</p>
+					</div>
+				</div>
+				<!-- single features --
+				<div class="col-lg-4 col-md-6">
+					<div class="single_fact">
+						<div class="f_icon">
+							<img src="img/f-icons/icon6.png" alt="">
+						</div>
+						<h4>Live Support</h4>
+						<p>Lorem ipsum dolor sit amet consec tetur adipis icing elit, sed do eiusmod tempor incididunt labore dolor sit
+							amet consec.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--================ End Fact Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	<!--<div class="section_gap testimonial_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 text-center">
+					<div class="active_testimonial owl-carousel" data-slider-id="1">
+						<!-- single testimonial --
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her faceand She is the host to your journey.</p>
+							</div>
+						</div>
+
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her faceand She is the host to your journey.</p>
+							</div>
+						</div>
+
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her faceand She is the host to your journey.</p>
+							</div>
+						</div>
+
+						<div class="single_testimonial">
+							<div class="testimonial_head">
+								<img src="img/quote.png" alt="">
+								<h4>Fanny Spencer</h4>
+								<div class="review">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+								</div>
+							</div>
+							<div class="testimonial_content">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+									it, you travel across her faceand She is the host to your journey.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="owl-thumbs d-flex justify-content-center" data-slider-id="1">
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="img/testimonial/t1.jpg" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="img/testimonial/t2.jpg" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="img/testimonial/t3.jpg" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+						<div class="owl-thumb-item">
+							<div class="position-relative">
+								<img class="img-fluid" src="img/testimonial/t4.jpg" alt="">
+							</div>
+							<div class="overlay-grad"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Registration Area =================-->
+	<!--<div class="section_gap registration_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-7">
+					<div class="row clock_sec clockdiv" id="clockdiv">
+						<div class="col-lg-12">
+							<h1>Register Now</h1>
+							<p>There is a moment in the life of any aspiring astronomer that it is time to buy that first telescope. It’s
+								exciting to think about setting up your own viewing station.</p>
+						</div>
+						<div class="col clockinner1 clockinner">
+							<h1 class="days">150</h1>
+							<span class="smalltext">Days</span>
+						</div>
+						<div class="col clockinner clockinner1">
+							<h1 class="hours">23</h1>
+							<span class="smalltext">Hours</span>
+						</div>
+						<div class="col clockinner clockinner1">
+							<h1 class="minutes">47</h1>
+							<span class="smalltext">Mins</span>
+						</div>
+						<div class="col clockinner clockinner1">
+							<h1 class="seconds">59</h1>
+							<span class="smalltext">Secs</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 offset-lg-1">
+					<div class="register_form">
+						<h3>Courses for Free</h3>
+						<p>It is high time for learning</p>
+						<form class="form_area" id="myForm" action="mail.html" method="post">
+							<div class="row">
+								<div class="col-lg-12 form_group">
+									<input name="name" placeholder="Your Name" required="" type="text">
+									<input name="name" placeholder="Your Phone Number" required="" type="tel">
+									<input name="email" placeholder="Your Email Address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+									 required="" type="email">
+								</div>
+								<div class="col-lg-12 text-center">
+									<button class="primary-btn">Submit</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--================ End Registration Area =================-->
+	
+	<!--<div class="events_area" style="background-color:#ea247d">
+		<div class="container">
+		
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+	
+	
+		<div class="instructors_area lite_bg" style="background-color:#ea247d">
+        <div class="container">
+           
+            <div class="row">
+                <!-- single-instructor -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <i class="fa fa-university" style="font-size:40px;color:#ea247d;background-color:#fff;border:1px solid #fff;border-radius:50%;padding:30px"></i>
+							<br><br>
+							<h5 style="color:#fff">700+</h5>
+							<h6 style="color:#fff">Universities</h6>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- single-instructor -->
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                              <i class="fa fa-users" style="font-size:40px;color:#ea247d;background-color:#fff;border:1px solid #fff;border-radius:50%;padding:30px"></i>
+							  <br><br>
+                            <h5 style="color:#fff">20000+</h5>
+							<h6 style="color:#fff">Scholarship Seats</h6>
+                        </div>
+                       
+                    </div>
+                </div>
+                <!-- single-instructor -->
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                               <i class="fa fa-graduation-cap" style="font-size:40px;color:#ea247d;background-color:#fff;border:1px solid #fff;border-radius:50%;padding:30px"></i>
+							   <br><br>
+                            <h5 style="color:#fff">5000+</h5>
+							<h6 style="color:#fff">Global Agents</h6>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+				
+				<div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                               <i class="fa fa-pencil-square-o" style="font-size:40px;color:#ea247d;background-color:#fff;border:1px solid #fff;border-radius:50%;padding:30px"></i>
+							   <br><br>
+                            <h5 style="color:#fff">7000+</h5>
+							<h6 style="color:#fff">Admissions</h6>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+	
+	
+	<div class="instructors_area lite_bg" style="background-color:#ffb400">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="main_title">
+                        <h2>Hot Courses</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- single-instructor -->
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <img src="images/h1.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs" style=" box-shadow: 0 0 50px rgba(153, 153, 153, 0.1);
+    background: #ffb400;
+	
+    padding: 40px;
+    margin-top: -30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;">
+                            <h4>Chinese Language</h4>
+                            <a href="#" class="primary-btn text-uppercase" style="background:#ea247d">View Detail</a>
+                            <!--<p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single-instructor -->
+                  <div class="col-lg-4 col-sm-6">
+                  <div class="single_instructor">
+                        <div class="author">
+                            <img src="images/h2.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs" style=" box-shadow: 0 0 50px rgba(153, 153, 153, 0.1);
+    background: #ffb400;
+	
+    padding: 40px;
+    margin-top: -30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;">
+                            <h4>Chinese Language</h4>
+                             <a href="#" class="primary-btn text-uppercase" style="background:#ea247d">View Detail</a>
+                            
+                            <!--<p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single-instructor -->
+                  <div class="col-lg-4 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <img src="images/h3.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs" style=" box-shadow: 0 0 50px rgba(153, 153, 153, 0.1);
+    background: #ffb400;
+	
+    padding: 40px;
+    margin-top: -30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;">
+                           <h4>Chinese Language</h4>
+                            <a href="#" class="primary-btn text-uppercase" style="background:#ea247d">View Detail</a>
+                            <!--<p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single-instructor -->
+               <!-- <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <img src="img/instructors/ins4.jpg" alt="">
+                        </div>
+                        <div class="author_decs">
+                            <h4>Lena Keller</h4>
+                            <p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	<!--<div class="events_area" style="background-color:#ffb400">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>Hot Courses</h2>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							<div class="single_event">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u1.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u2.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							<div class="single_event">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u3.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u4.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	
+	
+	
+	<div class="department_area section_gap">
+		<div class="container">
+			<div class="row align-items-center">
+				
+				<div class="offset-lg-1 col-lg-5">
+					<div class="dpmt_right">
+						<h1>Scholarships</h1>
+						<p>RIGHT FUTURE EDUCATION CONSULTANCY (BrightEDU) was established in the year 2014. We consult for high education planning and materialize or go for implementation according to the university's requirement. Our company offer range of consulting services to help analyze university's requirements for effective and flexibility of oversea student’s recruitment.</p>
+
+                        <p>BRIGHT FUTURE EDUCATION CONSULTANCY helps to get Admission to Chinese Universities with different kind of scholarships, Waiver on Tuition fees and accommodation fees or part.....</p>
+						<a href="#" class="primary-btn text-uppercase" style="background:#ea247d">Read More</a>
+					</div>
+				</div>
+				
+				<div class="col-lg-6">
+					<div class="dpmt_courses">
+						<div class="row">
+							<!-- single course -->
+							<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+								<div>
+									<div class="dpmt_icon">
+										<img src="images/s1.jpg" alt="" style="height:300px;width:300px">
+									</div>
+									<!--<h4>Languages</h4>-->
+								</div>
+							</div>
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon2.png" alt="">
+									</div>
+									<h4>Business</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt-100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon3.png" alt="">
+									</div>
+									<h4>Literature</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon4.png" alt="">
+									</div>
+									<h4>Software</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon5.png" alt="">
+									</div>
+									<h4>Design</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="col-lg-4 col-md-4 col-sm-6 col-12 text-center">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon6.png" alt="">
+									</div>
+									<h4>Coaching</h4>
+								</div>
+							</div>-->
+							<!-- single course -->
+							<!--<div class="offset-lg-4 col-lg-4 col-md-4 col-sm-6 col-12 text-center mt--100">
+								<div class="single_department">
+									<div class="dpmt_icon">
+										<img src="img/dpmt/icon7.png" alt="">
+									</div>
+									<h4>Development</h4>
+								</div>
+							</div>-->
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+
+	<!--================ Start Events Area =================-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="instructors_area lite_bg" style="background-color:#2fad3b">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="main_title">
+                        <h2>Universities</h2>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- single-instructor -->
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <img src="images/u1.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs" >
+                            <h5>HENAN UNIVERSITY</h5>
+							<H6>Luoyang, Chaina</H6>
+                            <!--<p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single-instructor -->
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <img src="images/u2.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs">
+                            <h5>SOUTHWESTERN UNIV</h5>
+							<h6>Chengdu, China</h6>
+                            <!--<p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single-instructor -->
+                  <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                            <img src="images/u3.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs">
+                            <h5>SHENYANG AGRICULT</h5>
+							<h6>Shenyang, China</h6>
+                            <!--<p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!-- single-instructor -->
+               <div class="col-lg-3 col-sm-6">
+                    <div class="single_instructor">
+                        <div class="author">
+                             <img src="images/u4.jpg" alt="" style="height:200px;width:200px">
+                        </div>
+                        <div class="author_decs">
+                            <h5>TIANJIN UNIVERSITY</h5>
+							<h6> Tianjin, China</h6>
+                          <!-- <p class="profession">Sr. Faculty Data Science</p>
+                            <p>If you are looking at blank cassettes on the web, you may be very confused at the
+                                difference in price.</p>
+                            <div class="social_icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	
+	
+	<!--<div class="events_area" style="background-color:#2fad3b">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<h2>Universities</h2>
+						
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							<div class="single_event">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u1.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u2.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-lg-12 col-sm-12">
+							<div class="single_event">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u3.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-5">
+										<div class="event_thumb">
+											<img src="images/u4.jpg" alt="" style="width:200px;height:200px">
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--================ End Events Area =================-->
+	
+	
+	
+	
+	<!--================ Start Popular Courses Area =================-->
+	
+	
+	<center>
+	
+	<div class="popular_courses lite_bg">
+		<div class="container">
+			
+			
+				
+			<div class="col-lg-12 col-md-12 blog_details">
+			 <div class="row">
+                <div class="col-lg-2 col-6">
+					<div class="single_course">
+						<div>
+							<img class="img-fluid" src="images/m1.jpg" alt="" style="border:1px solid #D5DBDB;padding:10px">
+						
+						</div>
+						
+					</div>
+				</div>
+				 <div class="col-lg-2 col-6">
+					<div class="single_course">
+						<div>
+							<img class="img-fluid" src="images/m2.jpeg" alt="" style="border:1px solid #D5DBDB;padding:10px">
+						
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="col-lg-2 col-6">
+					<div class="single_course">
+						<div>
+							<img class="img-fluid" src="images/m3.jpg" alt="" style="border:1px solid #D5DBDB;padding:10px">
+						
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				<div class="col-lg-2 col-6">
+					<div class="single_course">
+						<div>
+							<img class="img-fluid" src="images/m4.jpg" alt="" style="border:1px solid #D5DBDB;padding:10px">
+						
+						</div>
+						
+					</div>
+				</div>
+				
+				
+				 <div class="col-lg-2 col-6">
+					<div class="single_course">
+						<div>
+							<img class="img-fluid" src="images/m5.jpg" alt="" style="border:1px solid #D5DBDB;padding:10px">
+						
+						</div>
+						
+					</div>
+				</div>
+				
+				<div class="col-lg-2 col-6">
+					<div class="single_course">
+						<div>
+							<img class="img-fluid" src="images/m1.jpg" alt="" style="border:1px solid #D5DBDB;padding:10px">
+						
+						</div>
+						
+					</div>
+				</div>
+				</div>
+				
+				</div>
+				<!--<div class="col-lg-1 col-md-12">
+				   
+				 
+					
+				</div>
+				<div class="col-lg-2 col-md-12">
+				   
+				   <img class="img-fluid" src="images/m1.jpg" alt="" style="height:120px;width:120px;border:1px solid #D5DBDB;padding:10px">
+					
+				</div>
+				
+				<div class="col-lg-2 col-md-12">
+				   
+				   <img class="img-fluid" src="images/m2.jpeg" alt="" style="height:120px;width:120px;border:1px solid #D5DBDB;padding:10px">
+					
+				</div>
+				<div class="col-lg-2 col-md-12">
+				   
+				   <img class="img-fluid" src="images/m3.jpg" alt="" style="height:120px;width:120px;border:1px solid #D5DBDB;padding:10px">
+					
+				</div>
+				<div class="col-lg-2 col-md-12">
+				   
+				   <img class="img-fluid" src="images/m4.jpg" alt="" style="height:120px;width:120px;border:1px solid #D5DBDB;padding:10px">
+					
+				</div>
+				<div class="col-lg-2 col-md-12">
+				   
+				   <img class="img-fluid" src="images/m5.jpg" alt="" style="height:120px;width:120px;border:1px solid #D5DBDB;padding:10px">
+					
+				</div>
+				<div class="col-lg-1 col-md-12">
+				   
+				 
+					
+				</div>-->
+			
+				
+			</div>
+		</div>
+		</center>
+	
+	<!--================ End Popular Courses Area =================-->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	<!--================ Start footer Area  =================-->
+	<footer class="footer-area section_gap" style="background-color:#0e3091;">
+		<div class="container" style="margin-top:-50px;margin-bottom:-100px">
+			<div class="row">
+				<div class="col-lg-3 col-md-6 single-footer-widget">
+					<h4>SCHOLARSHIPS</h4>
+					<ul>
+						<li><a href="#" style="color:white">Non Degree</a></li>
+						<li><a href="#" style="color:white">Diploma</a></li>
+						<li><a href="#" style="color:white">Bachelor</a></li>
+						<li><a href="#" style="color:white">Master</a></li>
+						<li><a href="#" style="color:white">PHD</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 single-footer-widget">
+					<h4>Courses</h4>
+					<ul>
+						<li><a href="#" style="color:white">Non Degree</a></li>
+						<li><a href="#" style="color:white">Diploma</a></li>
+						<li><a href="#" style="color:white">Bachelor</a></li>
+						<li><a href="#" style="color:white">Master</a></li>
+						<li><a href="#" style="color:white">PHD</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 single-footer-widget">
+					<h4>UNIVERSITIES</h4>
+					<ul>
+						<li><a href="#" style="color:white">China University</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-6 single-footer-widget">
+					<h4>CONTACT INFO</h4>
+					<ul>
+						<li><a href="#" style="color:white">Address:  Building 86, Room 613. 6th Floor, Li Shuang Road, South of Kunlan Park, New Home, Jinnan Distrcit, Tianjin City P.R. China.</a></li>
+						<li><a href="#" style="color:white">Phone: 022-2855-7478</a></li>
+						<li><a href="#" style="color:white">Email: service@brightedu.cn.com</a></li>
+						
+						
+					</ul>
+				</div>
+				<!--<div class="col-lg-4 col-md-6 single-footer-widget">
+					<h4>Newsletter</h4>
+					<p>You can trust us. we only send promo offers,</p>
+					<div class="form-wrap" id="mc_embed_signup">
+						<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+						 method="get" class="form-inline">
+							<input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
+							 required="" type="email">
+							<button class="click-btn btn btn-default">
+								<span>subscribe</span>
+							</button>
+							<div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+							</div>
+
+							<div class="info"></div>
+						</form>
+					</div>
+				</div>-->
+			</div>
+			
+			
+				
+		
+			<!--<div class="row footer-bottom d-flex justify-content-between"  >
+				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2018 All rights reserved | Designed by <a href="#">Techieshubhdeep IT Solution Pvt Ltd</a></p>
+				<div class="col-lg-4 col-sm-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
+				</div>
+			</div>-->
+		</div>
+	</footer>
+	<div class="header-top" style="background-color:#ea247d;display:block;padding:8px;">
+			<div class="container">
+			
+				<div class="row align-items-center">
+					
+					<div class="col-lg-12">
+					
+						<center><font style="font-family: 'Poppins', sans-serif !important;font-size: 12px;color:#fff">Copyright © 2018 All rights reserved <br> Designed by <a href="#">Techieshubhdeep IT Solution Pvt Ltd</font>
+					    </center>
+				
+					
+
+						<!--<a href="tel:+9530123654896">
+							<span class="lnr lnr-phone"></span>
+							<span class="text">
+								<span class="text" style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff">022-2855-7478</span>
+							</span>
+						</a> 
+						<a href="mailto:support@colorlib.com">
+							<span class="lnr lnr-envelope"></span>
+							<span class="text">
+								<span class="text" style="font-family: 'Poppins', sans-serif !important;font-size: 13px;color:#fff">service@brightedu.cn.com</span>
+							</span>
+						</a>-->
+					</div>
+					
+				
+				</div>
+			
+			</div>
+		</div>
+	<!--================ End footer Area  =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="/js/jquery-3.2.1.min.js"></script>
+	<script src="/js/popper.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/stellar.js"></script>
+	<script src="/js/countdown.js"></script>
+	<script src="/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="/vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="/js/owl-carousel-thumb.min.js"></script>
+	<script src="/js/jquery.ajaxchimp.min.js"></script>
+	<script src="/vendors/counter-up/jquery.counterup.js"></script>
+	<script src="/js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="/js/gmaps.min.js"></script>
+	<script src="/js/theme.js"></script>
+</body>
+
+</html>

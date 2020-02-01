@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/assets/bootstrap.css" />
+    <title>Add Course</title>
+  </head>
+  <body>
+    <%- include('../header' , { admin : admin , active : "scholarship_add" }) %>
+    <div class="container" >
+      <div class="col-md-24">
+        <div class="card mt-4">
+          <div class="card-header">
+            <b>Add Scholarship Details</b>
+          </div>
+          <form action="/scholarship/add" method="post" enctype="multipart/form-data" >
+            <div class="card-body register">
+              <div class="row">
+                 <div class="col">
+                  <p class="card-text"><b>Please Fill Scholarship Details here</b></p>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Banner </label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">Upload</span>
+                      </div>
+                      <div class="custom-file">
+                        <input type="file" required id= 'banner' name = 'banner' class="custom-file-input" id="inputGroupFile01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose Banner</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div id = 'banner_preview'>
+                   
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Program Id </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="program_id"
+                      placeholder="Program Id"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Major </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="major"
+                      placeholder="Major"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Intake</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="intake"
+                      placeholder="Intake"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Degree</label>
+                    <select name = 'degree' id = 'degrees' class="custom-select">
+                      <option selected disabled>Loading...</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Language</label>
+                    <select name = 'language' id = 'languages' class="custom-select">
+                      <option selected disabled>Loading...</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Duration</label>
+                    <select name = 'duration' class="custom-select">
+                      <option selected disabled>Choose Duration</option>
+                      <option value="6 months">6 months </option>
+                      <option value="1 year">1 Year </option>
+                      <option value="2 years">2 Years </option>
+                      <option value="3 years">3 Years </option>
+                      <option value="4 years">4 Years </option>
+                      <option value="5 years">5 Years </option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="card-text"><b>Please Fill Fee Details here</b></p>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Application Fee </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="application_fee"
+                      placeholder="Application Fee"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Service Fee </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="service_fee"
+                      placeholder="Service Fee"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Insurance Fee</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="insurance_fee"
+                      placeholder="Insurance Fee"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Visa Fee </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="visa_fee"
+                      placeholder="Visa Fee"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Tution Fee </label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="tution_fee"
+                      placeholder="Tution Fee"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Hostel Fee</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="hostel_fee"
+                      placeholder="Hostel Fee"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="card-text"><b>Please Fill Other Details</b></p>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Age Limit</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="age_limit"
+                      placeholder="Age Limit"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Application Deadline</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="application_deadline"
+                      placeholder="Application Deadline"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Grade Required</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="grade_required"
+                      placeholder="Grade Required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">English Proficiency</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="english_proficiency"
+                      placeholder="English Proficiency"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Restricted Countries</label>
+                    <input
+                      type="text"
+                      required
+                      class="form-control"
+                      name="restricted_countries"
+                      placeholder="Restricted Countries"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="formGroupExampleInput">Required Documents</label>
+                    <textarea
+                      required
+                      class="form-control"
+                      rows="3"
+                      placeholder="Required Documents"
+                      name="required_documents"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                style="width : 100%"
+                class="btn btn-primary"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/assets/jquery.js"></script>
+  <script src="/assets/bootstrap.js"></script>
+  <script src="/assets/popper.js"></script>
+  <script src="/myjs/scholarship_add.js"></script>
+</html>
